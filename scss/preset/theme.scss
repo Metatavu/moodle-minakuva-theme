@@ -1,18 +1,19 @@
 //colors
-$color_olivine_approx: #88b77b;
+$color_olivine_approx: rgb(143, 143, 143);
 $white: #fff;
+$black: #000;
 $color_storm_dust_approx: #656565;
-$blaze_orange: #f60;
+$blaze_orange: #000;
 $color_ebb_approx: #e8e3e3;
 $color_woodsmoke_approx: #111;
 $color_alto_approx: #dedede;
-$color_asparagus_approx: #689f59;
+$color_asparagus_approx: #797979;
 $color_gray_approx: #828282;
-$color_blaze_orange_approx: #ff6c00;
+$color_blaze_orange_approx: #000000;
 $color_silver_chalice_approx: #b0b0b0;
 $black_20: rgba(0, 0, 0, 0.2);
 $black_90: rgba(0, 0, 0, .9);
-$black_80: rgba(0, 0, 0, .8);
+$black_80: rgba(0, 0, 0, .6);
 $color_heavy_metal_approx: #2d2d2d;
 $color_danube_approx: #5a7ec9;
 $color_cardinal_approx: #cd2129;
@@ -24,7 +25,7 @@ $color_iron_approx: #d6d6d6;
 $color_chicago_approx: #5c5c5c;
 $color_olivine_50_approx: rgba(136, 183, 123, .5);
 $black_7_5: rgba(0, 0, 0, 0.075);
-$color_tea_green_approx: rgba(205, 255, 191, 1);
+$color_tea_green_approx: rgb(202, 202, 202);
 $color_fuscous_gray_approx: #4f4f4f;
 $color_gray_nurse_approx: #e9e9e9;
 $color_bon_jour_approx: #e2e2e2;
@@ -44,10 +45,10 @@ $color_whisper: #e6e6e6;
 $color_light_gray: #f8f9fa;
 
 //fonts
-$font_0: Century Gothic;
-$font_1: Arial;
-$font_2: Helvetica;
-$font_3: sans-serif;
+$font_0: Montserrat unset;
+$font_1: Montserrat;
+$font_2: Montserrat;
+$font_3: unset;
 $font_4: FontAwesome;
 $fontwww: '/fonts/' !default;
 
@@ -205,12 +206,11 @@ i.icon {
 }
 
 #header {
-    border-bottom: 1px solid $color_ebb_approx;
-    background: $color_olivine_approx !important;
+    background: $white !important;
     .popover-region {
         margin-top: 5px;
         i.icon:before {
-            color: $white;
+            color: $black;
         }
     }
     .right-menu .usermenu {
@@ -223,7 +223,7 @@ i.icon {
         .search-input-wrapper {
             padding: 0;
             > div i.icon {
-                color: $white;
+                color: $black;
                 margin-top: 8px;
             }
             > form {
@@ -246,14 +246,14 @@ i.icon {
             }
         }
         span {
-            color: $white;
+            color: $black;
             display: inline-block;
             margin-right: 5px;
             i {
                 margin-right: 5px;
             }
             a {
-                color: $white;
+                color: $black;
                 display: inline-block;
             }
         }
@@ -297,7 +297,7 @@ i.icon {
                 > span {
                     width: 27px;
                     height: 3px;
-                    background: $white;
+                    background: $black;
                     display: block;
                     margin: 5px auto 0;
                     &:first-child {
@@ -342,7 +342,7 @@ i.icon {
             }
         }
         a.dropdown-toggle {
-            color: $white;
+            color: $black;
         }
         .dropdown .dropdown-menu {
             top: auto;
@@ -358,13 +358,13 @@ i.icon {
         .moodle-actionmenu .toggle-display .userbutton {
             .usertext {
                 font-size: 16px;
-                color: $white;
+                color: $black;
             }
             .avatars {
                 width: 35px;
                 height: 35px;
-                background: $white;
-                border: 1px solid $white;
+                background: $black;
+                border: 1px solid $black;
                 border-radius: 18px;
                 .avatar {
                     border-radius: 18px;
@@ -415,7 +415,7 @@ i.icon {
                     }
                     > li > a {
                         font-size: 16px;
-                        color: $white;
+                        color: $black;
                         line-height: 34px;
                         padding: 0 30px 0 20px;
                         &:hover {
@@ -463,7 +463,7 @@ i.icon {
                 }
                 > li > a {
                     font-size: 16px;
-                    color: $white;
+                    color: $black;
                     line-height: 20px;
                     text-shadow: none;
                     &:hover {
@@ -502,7 +502,7 @@ i.icon {
     }
     nav.nav {
         a.nav-link {
-            color: $white;
+            color: $black;
             padding-left: 10px;
             padding-right: 10px;
             &:hover {
@@ -523,12 +523,12 @@ i.icon {
             padding-top: 8px;
             padding-bottom: 8px;
             &:hover {
-                color: $white;
-                background: $color_alto_approx;
+                color: $black;
+                background: $color_gray_approx;
             }
             &:focus {
-                color: $white;
-                background: $color_alto_approx;
+                color: $black;
+                background: $color_gray_approx;
             }
             span {
                 color: $color_storm_dust_approx;
@@ -872,15 +872,17 @@ i.icon {
         color: $blaze_orange;
     }
     .footer-main {
-        background: $color_heavy_metal_approx;
+        background: $white;
         padding: 30px 0 54px;
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 4px rgba(0,0,0,.5);
         h2 {
             font-weight: bold;
             line-height: 36px;
             margin: 0 0 10px;
         }
         p {
-            color: $white;
+            color: $black;
             line-height: 22px;
         }
         .infoarea {
@@ -905,7 +907,7 @@ i.icon {
                 margin: 0;
                 li a {
                     font-size: 16px;
-                    color: $white;
+                    color: $black;
                     line-height: 32px;
                     &:hover {
                         color: $color_olivine_approx;
@@ -928,7 +930,7 @@ i.icon {
         padding: 5px 0 0;
         h6 {
             font-size: 14px;
-            color: $white;
+            color: $black;
         }
         ul {
             list-style: none;
@@ -942,7 +944,7 @@ i.icon {
                 }
                 a {
                     font-size: 42px;
-                    color: $white;
+                    color: $black;
                     &:hover {
                         text-decoration: none;
                     }
@@ -981,7 +983,7 @@ i.icon {
         }
     }
     .footer-bootom {
-        background: $color_rangoon_green_approx;
+        background: $white;
         padding: 21px 0;
         text-align: center;
         p {
@@ -1175,6 +1177,7 @@ i.icon {
             margin: 0 auto;
         }
     }
+
     .dir-ltr #header .header-top {
         .usermenu {
             padding-left: 20px;
@@ -1194,7 +1197,6 @@ i.icon {
 .header-main {
     margin-top: 50px;
     background: $white;
-    border-bottom: 1px solid $color_ebb_approx;
     .navbar-toggler {
         float: right;
         padding: 0;
@@ -1349,11 +1351,11 @@ i.icon {
             a.dropdown-item {
                 &:hover {
                     color: #fff;
-                    background: $color_olivine_approx;
+                    background: $color_fuscous_gray_approx;
                 }
                 &:focus {
                     color: #fff;
-                    background: $color_olivine_approx;
+                    background: $color_fuscous_gray_approx;
                 }
             }
         }
@@ -1388,12 +1390,12 @@ i.icon {
                 padding: 10px 20px;
                 margin: 0;
                 &:hover {
-                    color: $white;
+                    color: $black;
                     background: $color_olivine_approx;
                     border: 0;
                 }
                 &:focus {
-                    color: $white;
+                    color: $black;
                     background: $color_olivine_approx;
                     border: 0;
                 }
@@ -1413,12 +1415,12 @@ i.icon {
                         padding: 10px 20px;
                         margin: 0;
                         &:hover {
-                            color: $white;
-                            background: $color_olivine_approx;
+                            color: $black;
+                            background: $color_gray_approx;
                         }
                         &:focus {
-                            color: $white;
-                            background: $color_olivine_approx;
+                            color: $black;
+                            background: $color_gray_approx;
                         }
                     }
 
@@ -1432,12 +1434,12 @@ i.icon {
                             border: 0;
                             padding: 10px 20px 10px 40px;
                             &:hover {
-                                color: $white;
-                                background: $color_olivine_approx;
+                                color: $black;
+                                background: $color_gray_approx;
                             }
                             &:focus {
-                                color: $white;
-                                background: $color_olivine_approx;
+                                color: $black;
+                                background: $color_gray_approx;
                             }
                         }
                     }
@@ -2099,7 +2101,7 @@ input[type="submit"] {
     }
 }
 input[type="submit"].btn-link {
-    color: $white;
+    color: $black;
 }
 
 .btn-secondary{
@@ -3832,9 +3834,6 @@ tr.discussion {
         max-width: 500px;
         width: 100%;
     }
-    .form-group {
-        /* max-width: 300px; */
-    }
     .mform .fitem {
         margin-bottom: 10px;
     }
@@ -4279,9 +4278,6 @@ nav .popover-region {
         .page-link {
             &:focus {
                 box-shadow: none;
-            }
-            i.icon {
-                /* line-height: 24px; */
             }
         }
     }

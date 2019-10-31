@@ -25,7 +25,7 @@
 $string['about'] = 'Minäkuva';
 $string['aboutus'] = 'Lisää meistä';
 $string['address'] = 'Osoite';
-$string['calendar'] = 'Kelnteri';
+$string['calendar'] = 'Kalenteri';
 $string['configtitle'] = "Academi asetukset";
 $string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><img class=img-polaroid src="academi/pix/screenshot.jpg" /><br/><p></p><h3>Theme Credits</h3><p><h3>Moodle Academi theme</h3><p>This theme is based on the Boost Moodle theme.</p><p>Authors: LMSACE Dev Team<br>Contact: info@lmsace.com<br>Website: <a href="http://www.lmsace.com">www.lmsace.com</a><br></p>';
 
